@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/captionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:hint="Add Caption..."
+        android:ems="15" >
+
+        <requestFocus />
+    </EditText>
+        
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/captionEditText"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/uploadPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/photoImageView"
+        android:layout_marginRight="10dp"
+        android:text="Post" />
+
+	<View
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	 android:layout_below="@id/photoImageView"
+    	android:layout_marginTop="20dp"
+    	android:background="@android:color/darker_gray"/>
+    
+    <TextView
+        android:id="@+id/shareView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/uploadPhotoButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Share"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/facebookView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/shareView"
+		android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Facebook"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/twitterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/facebookView"
+		android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Twitter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/whatsappView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/twitterView"
+		android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Whatsapp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />    
+</RelativeLayout>

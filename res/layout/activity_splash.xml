@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fakeView"
+        android:layout_marginBottom="15.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="#ffffffff"
+        android:textSize="40.0sp" />
+
+    <TextView
+        android:id="@+id/appTagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fakeView"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/app_tagline"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <ProgressBar
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_below="@id/appTagline"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30.0dip"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress_bar"
+        android:padding="3.0dip"
+        android:visibility="visible" />
+
+</RelativeLayout>
